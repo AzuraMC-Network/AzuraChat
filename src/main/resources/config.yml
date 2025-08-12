@@ -1,0 +1,24 @@
+# AzuraChat Configuration File
+
+# Chat format configuration
+# 聊天格式配置
+# You can use PlaceholderAPI variables, e.g. %luckperms_prefix%
+# 您可以使用 PlaceholderAPI 变量，例如 %luckperms_prefix%
+# Support RGB Color like: &#RRGGBBText or {#RRGGBB}Text
+# 支持RGB颜色代码，例如: &#RRGGBBText 或 {#RRGGBB}Text
+chat:
+  # Default chat format for players without special permissions
+  # 默认聊天格式
+  default-format: "&7%player_name%&f: &7%message%"
+
+  # Permission-specific formats (checked in order from top to bottom)
+  # 权限组特定格式（按从上到下的顺序检查）
+  permission-formats:
+    # Enable/disable permission-based chat formats
+    # 启用/禁用基于权限的聊天格式
+    enabled: false
+    # Permission format entries
+    # 权限格式条目
+    "azurachat.admin": "&c[Admin] %player_name%&f: &f%message%"
+    "azurachat.mod": "&9[Mod] %player_name%&f: &f%message%"
+    "azurachat.vip": "&a[VIP] %player_name%&f: &f%message%"
